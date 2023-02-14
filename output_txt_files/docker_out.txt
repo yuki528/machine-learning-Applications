@@ -6,7 +6,6 @@
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 288-047-648
 
  [2023-02-13 05:28:59,494] INFO in app: JSON payload:
 {'CHAS': {'0': 0}, 'RM': {'0': 9.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
@@ -17,4 +16,4 @@
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  9.575  296.0     15.3  396.9   4.98
 [2023-02-13 05:29:50,553] INFO in app: The output prediction is: [20.35373177134412]
-127.0.0.1 - - [04/Jun/2020 06:28:50] "POST /predict HTTP/1.1" 200 -
+172.17.0.1 - - [13/Feb/2023 05:59:25] "POST /predict HTTP/1.1" 200 -
