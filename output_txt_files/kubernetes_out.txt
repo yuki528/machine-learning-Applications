@@ -23,5 +23,12 @@ Handling connection for 5000
 [2023-02-13 06:28:50,547] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  9.575  296.0     15.3  396.9   4.98
-[2023-02-13 06:28:50,553] INFO in app: The output prediction is: [20.35373177134412]
+[2023-02-13 06:28:50,553] INFO in app: output prediction : [20.35373177134412]
 127.0.0.1 - - [13/Feb/2023 06:28:50] "POST /predict HTTP/1.1" 200 -
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
