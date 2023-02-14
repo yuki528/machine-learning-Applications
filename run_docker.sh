@@ -8,7 +8,7 @@ docker build --tag=myproject .
 
 # Step 2: 
 # List docker images
-docker image list
+docker image ls
 
 # Step 3: 
 # Run flask app
