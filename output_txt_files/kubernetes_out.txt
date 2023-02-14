@@ -1,3 +1,12 @@
+ + kubectl get pods
+NAME                            READY   STATUS    RESTARTS   AGE
+machine-learning-Applications   1/1     Running   0          3h25m
+
++ kubectl port-forward machine-learning-Applications 5000:80
+Forwarding from 127.0.0.1:5000 -> 80
+Forwarding from [::1]:5000 -> 80
+Handling connection for 5000
+
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.

@@ -5,6 +5,7 @@ import logging
 import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
+from flask.templating import render_template
 
 app = Flask(__name__)
 LOG = create_logger(app)
@@ -20,8 +21,9 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = f"<h3>Sklearn Prediction Home</h3>"
-    return html.format(format)
+    # html = f"<h3>Sklearn Prediction Home</h3>"
+    # return html.format(format)
+    return render_template('index.html')
 
 @app.route("/predict", methods=['POST'])
 def predict():
@@ -63,6 +65,7 @@ def predict():
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
+    LOG.info(f"output prediction: {prediction}")
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
