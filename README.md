@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![Build Status](https://circleci.com/gh/yuki528/machine-learning-Applications.svg?style=shield)](https://app.circleci.com/pipelines/github/yuki528/machine-learning-Applications)
 
 ## Project Overview
 
